@@ -1,4 +1,250 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
 body {
     display: flex;
-    background: #91b17c;
+    background:	#8ba888;
 }
+
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+}
+/* Navigation Bar */
+
+#nav-bar {
+	height: auto;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	background-color: #647b6a;
+}
+
+.nav-bar {
+	background-color: #647b6a;
+	left: 0;
+	top: 0;
+	padding: 1rem 5rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-bar .brand {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: x-large;
+    color: #f1ebe1;
+}
+
+.nav-bar .nav-button a{
+    display: inline-block;
+	align-items: center;
+	justify-content: center;
+    font-size: large;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: bold;
+    color: #f1ebe1;
+    
+}
+ul > li {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+/*Main Image Section*/
+.mainimg{
+    min-height: 80vh;
+	width: 100%;
+	padding-top: 50px;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainimg img{
+    
+    min-width: 100%;
+    min-height: 20px;
+}
+
+/* About Me Section */
+img{
+    max-width: 100%;
+    border-style:solid ;
+    border-color: #2d4432;
+}
+
+.abtimg {
+    flex-basis: 40%;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.about {
+    width: 100%;
+    min-height: 10px;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.about .about-heading {
+    font-size: 50pt;
+    text-align: center;
+	color:#f1ebe1;
+    font-family: 'Gemunu Libre', sans-serif;
+    text-decoration: underline;
+    background-color: #647b6a;
+    border-radius: 50px;
+}
+
+.about .about-info {
+    font-size: 25pt;
+    padding: 1%;
+	text-align: center;
+	color:#f1ebe1;
+    font-family: 'Gemunu Libre', sans-serif;
+    text-decoration: underline;
+    background-color: #647b6a;
+    border-radius: 50px;
+}
+
+/* Work Section */
+.work {
+    width: 100%;
+    min-height: 10px;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+}
+.work-container {
+    display: flex;
+}
+.work .work-heading {
+    font-size: 50pt;
+    padding: 1%;
+	text-align: center;
+	color:#f1ebe1;
+    font-family: 'Gemunu Libre', sans-serif;
+    text-decoration: underline;
+    background-color: #647b6a; 
+    border-radius: 50px ; 
+}
+
+#main-work-card {
+    width: 100%;
+    border-color: #2d4432;
+    border-style: solid;
+    border-width: 4px;
+    transform: scale(0.85);
+}
+
+#work img {
+    width: 50%;
+    height: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#work img:hover {
+    opacity: 1.0;
+    transform: scale(1.1);
+}
+
+.card-tag {
+    background: var(--header-highlight);
+    color:#44624a;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    padding-left: 15px;
+    
+}
+
+#main-work-card .card-tag {
+    padding-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-title {
+    padding-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color:#2d4432;
+    text-decoration: underline;
+}
+
+.card-text {
+    font-size: 25px;
+    padding: 3px;
+    color: #2d4432;
+}
+
+.work-card {
+    display: inline-block;
+    width: 49.9%;
+    text-align: center;
+    margin-top: 1px;
+    border-color: #2d4432;
+    border-style: solid;
+    border-width: 4px; 
+    transform: scale(0.85);
+}
+@media screen and (max-width: 768px){
+    .work-card{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
+
+/* Contact Section */
+
+.contact {
+    width: 100%;
+    min-height: 10px;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+}    
+
+.contact-heading {
+    font-size: 50pt;
+    text-align: center;
+	color:#f1ebe1;
+    font-family: 'Gemunu Libre', sans-serif;
+    text-decoration: underline;
+    background-color: #647b6a;
+    border-radius: 40px 40px 0px 0px;
+
+}
+
+.contact ul {
+    font-size:25pt;
+    padding-right: 9%;
+	color:#f1ebe1;
+    font-family: 'Gemunu Libre', sans-serif;
+    text-decoration: underline;
+    background-color: #647b6a;
+    border-radius: 0px 0px 40px 40px
+}
+
+.contact ul a{
+	color:#f1ebe1;
+}
+
